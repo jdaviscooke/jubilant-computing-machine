@@ -4,6 +4,9 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: jdc-test
+  metadata:
+  annotations:
+    github.com/project-slug: jdaviscooke/jubilant-computing-machine
 spec:
   owner: team-a
 ---
@@ -40,10 +43,6 @@ spec:
     service Exampler {
       rpc Example (ExampleMessage) returns (ExampleMessage) {};
     }
-    
-    message ExampleMessage2 {
-      string foo = "bar";
-    };
 
     message ExampleMessage {
       string example = 1;

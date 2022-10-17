@@ -39,6 +39,8 @@ spec:
   system: jdc-test
   definition: |
     syntax = "proto3";
+    
+    some_change = "Commit me"
 
     service Exampler {
       rpc Example (ExampleMessage) returns (ExampleMessage) {};
